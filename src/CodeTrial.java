@@ -20,6 +20,7 @@ import java.util.*;
  * the function secret for testing.
  */
 public class CodeTrial {
+    //secret function
     public static int secret(int input){
         return input;
     }
@@ -44,9 +45,10 @@ public class CodeTrial {
                 //additive check
                 int left = secret(primeValue + primeValue);
                 int right = secret(primeValue) + secret(primeValue);
-                if(left != right) isAdditive = false;
-
-                break;
+                if(left != right){
+                    isAdditive = false;
+                    break;
+                }
             }
 
             if(isAdditive){
